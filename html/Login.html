@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../Css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../Css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+<body>
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Fitness Something</a>
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+                <img src="../hamburger.svg" alt="Menu" class="menu-icon">
+            </button>
+            <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas-header mt-2">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Fitness Something</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Smth</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item LogginBttnContainer extra">
+                            <a class="LoginBttn" href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-none d-md-flex ms-auto align-items-center">
+                <ul class="navbar-nav">
+                    <div class="nav-seperator custom-show"></div>
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <div class="nav-seperator custom-show"></div>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <div class="nav-seperator custom-show"></div>
+                    <li class="nav-item"><a class="nav-link" href="#">Smth</a></li>
+                    <div class="nav-seperator custom-show"></div>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <div class="nav-seperator custom-show"></div>
+                    <li class="nav-item LogginBttnContainer">
+                        <a class="LoginBttn nav-link" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main-bg">
+        <div class="contianerReg">
+            <h1 class="SignupText">Log In</h1>
+            <div class="register-card">
+                <form class="login-card-form" action="" method="post">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <div class="mb-3 checkbox-below">
+                        <input type="checkbox" id="checkbox-below" name="checkbox-below">
+                        <span class="checkmark"></span>
+                        <label for="checkbox-below">Stay Logged In.</label>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <button type="submit" class="SubmitBtn">Submit</button>
+                    </div>
+                    <div class="goToReg">
+                        <p class="text-center">You Don't Have an Account?
+                            <a href="../html/Register.html">Sign Up!</a>
+                        </p>
+                    </div>
+                    
+                </form>
+            </div> 
+        </div>
+    </div>
+    
+    <script src="../Js/bootstrap.js"></script>
+</body>
+</html>
