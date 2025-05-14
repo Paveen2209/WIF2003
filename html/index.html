@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health and Fitness Tracker</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fas fa-heartbeat"></i>
+        <h1>Health and Fitness Tracker</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" class="active"
+              ><i class="fas fa-home"></i> Home</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-user"></i> Profile</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-dumbbell"></i> Workouts</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-apple-alt"></i> Nutrition</a>
+          </li>
+          <li>
+            <a href="notifications.html"
+              ><i class="fas fa-bell"></i> Notifications</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Welcome, stay fit and healthy!</h2>
+          <p>
+            Track your fitness journey, monitor your nutrition, and achieve your
+            health goals.
+          </p>
+          <button class="btn primary-btn">Get Started</button>
+        </div>
+      </section>
+
+      <section class="dashboard">
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-shoe-prints"></i>
+          </div>
+          <div class="card-content">
+            <h3>Today's Steps</h3>
+            <p class="metric">7,856</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 78%"></div>
+            </div>
+            <p class="goal">Goal: 10,000 steps</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-fire"></i>
+          </div>
+          <div class="card-content">
+            <h3>Calories Burned</h3>
+            <p class="metric">385</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 64%"></div>
+            </div>
+            <p class="goal">Goal: 600 calories</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <div class="card-content">
+            <h3>Meal Plan</h3>
+            <ul class="meal-list">
+              <li><i class="fas fa-check-circle"></i> Breakfast: Oatmeal</li>
+              <li><i class="fas fa-check-circle"></i> Snack: Protein Bar</li>
+              <li>
+                <i class="far fa-circle"></i> Lunch: Grilled Chicken Salad
+              </li>
+              <li>
+                <i class="far fa-circle"></i> Dinner: Salmon with Vegetables
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="card-content">
+            <h3>Workout Progress</h3>
+            <div class="workout-stats">
+              <div class="stat">
+                <p class="stat-value">4</p>
+                <p class="stat-label">Workouts</p>
+              </div>
+              <div class="stat">
+                <p class="stat-value">165</p>
+                <p class="stat-label">Minutes</p>
+              </div>
+              <div class="stat">
+                <p class="stat-value">3</p>
+                <p class="stat-label">Streak</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Health and Fitness Tracker. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

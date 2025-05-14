@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UMNow - Meal Planner</title>
+    <link rel="stylesheet" href="../css/nutritionplanner.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">UMNow.</div>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Meal Planner</li>
+            <li>Feedback</li>
+          </ul>
+        </nav>
+        <div class="profile">
+          <img src="../assets/profile.png" alt="Profile" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="search-container">
+        <input type="text" placeholder="Search" id="search-bar" />
+        <div class="filter-buttons">
+          <button>High Protein</button>
+          <button>Low Fats</button>
+          <button>Low Calories</button>
+        </div>
+      </div>
+      <div class="recipe-list">
+        <a href="../html/grilledchickensalad.html" class="recipe-card">
+          <img
+            src="../assets/grilled-chicken-salad.jpg"
+            alt="Grilled Chicken Salad"
+          />
+          <div class="recipe-info">
+            <h3>Grilled Chicken Salad</h3>
+            <p>350 cal &bull; 25 mins</p>
+            <div class="actions">
+              <span>78</span>
+              <button class="like-button">❤️</button>
+            </div>
+          </div>
+        </a>
+
+        <a href="../html/avocadotoast.html" class="recipe-card">
+          <img src="../assets/avocadotoast.jpg" alt="Avocado Toast" />
+          <div class="recipe-info">
+            <h3>Avocado Toast</h3>
+            <p>250 cal &bull; 10 mins</p>
+            <div class="actions">
+              <span>65</span>
+              <button class="like-button">❤️</button>
+            </div>
+          </div>
+        </a>
+
+        <a href="../html/smoothiebowl.html" class="recipe-card">
+          <img src="../assets/smoothiebowl.jpeg" alt="Smoothie Bowl" />
+          <div class="recipe-info">
+            <h3>Smoothie Bowl</h3>
+            <p>300 cal &bull; 15 mins</p>
+            <div class="actions">
+              <span>85</span>
+              <button class="like-button">❤️</button>
+            </div>
+          </div>
+        </a>
+
+        <a href="../html/veggiepasta.html" class="recipe-card">
+          <img src="../assets/veggiepasta.jpeg" alt="Veggie Pasta" />
+          <div class="recipe-info">
+            <h3>Veggie Pasta</h3>
+            <p>400 cal &bull; 30 mins</p>
+            <div class="actions">
+              <span>90</span>
+              <button class="like-button">❤️</button>
+            </div>
+          </div>
+        </a>
+
+        <a href="../html/quinoasalad.html" class="recipe-card">
+          <img src="../assets/quinoasalad.jpeg" alt="Quinoa Salad" />
+          <div class="recipe-info">
+            <h3>Quinoa Salad</h3>
+            <p>320 cal &bull; 20 mins</p>
+            <div class="actions">
+              <span>72</span>
+              <button class="like-button">❤️</button>
+            </div>
+          </div>
+        </a>
+
+        <a href="../html/berryparfait.html" class="recipe-card">
+          <img src="../assets/berryparfait.jpg" alt="Berry Parfait" />
+          <div class="recipe-info">
+            <h3>Berry Parfait</h3>
+            <p>180 cal &bull; 5 mins</p>
+            <div class="actions">
+              <span>54</span>
+              <button class="like-button">❤️</button>
+            </div>
+          </div>
+        </a>
+      </div>
+    </main>
+    <a href="chat.html" class="chat-button" aria-label="Open chat">
+      <img src="../assets/chat.png" alt="Chat icon" />
+    </a>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const likeButtons = document.querySelectorAll(".like-button");
+        const searchBar = document.getElementById("search-bar");
+
+        likeButtons.forEach((button) => {
+          button.addEventListener("click", (event) => {
+            event.preventDefault();
+            if (button.textContent === "❤️") {
+              button.textContent = "🩶";
+              button.style.color = "#888";
+            } else {
+              button.textContent = "❤️";
+              button.style.color = "#ff4d4d";
+            }
+          });
+        });
+
+        searchBar.addEventListener("input", (e) => {
+          const query = e.target.value.toLowerCase();
+          const recipes = document.querySelectorAll(".recipe-card");
+
+          recipes.forEach((recipe) => {
+            const title = recipe.querySelector("h3").textContent.toLowerCase();
+            if (title.includes(query)) {
+              recipe.style.display = "block";
+            } else {
+              recipe.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

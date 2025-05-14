@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makan Buddy</title>
+    <link rel="stylesheet" href="../css/chat.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="header">
+        <img
+          src="https://img.icons8.com/ios-filled/50/robot.png"
+          alt="bot icon"
+        />
+        <h1>Makan Buddy</h1>
+      </div>
+
+      <div class="options">
+        <button>Weekly Meal Planning</button>
+        <button>What to eat now?</button>
+      </div>
+
+      <div class="chat-box" id="chatBox">
+        <div class="message user">What should I eat after swimming?</div>
+        <div class="message bot">
+          After swimming, eat lean protein (like chicken or tofu), whole grains
+          (like rice or quinoa), and a hydrating snack (like fruit or yogurt) to
+          refuel and recover.
+        </div>
+
+        <div class="message user">
+          How many packets of food that I had donated throughout this month?
+        </div>
+        <div class="message bot">
+          You had donated 87 packets of food to the food bank nearby! That's
+          incredible! Your generosity in donating food to the food bank makes a
+          real difference in the lives of those who need it most. Thank you for
+          spreading kindness and helping to nourish your community. 🌟
+        </div>
+      </div>
+
+      <div class="chat-input">
+        <input type="text" placeholder="Type a message ..." id="userInput" />
+        <button onclick="sendMessage()">➤</button>
+      </div>
+    </div>
+
+    <script>
+      function sendMessage() {
+        const input = document.getElementById("userInput");
+        const message = input.value.trim();
+        if (message === "") return;
+
+        const userMsg = document.createElement("div");
+        userMsg.className = "message user";
+        userMsg.textContent = message;
+
+        document.getElementById("chatBox").appendChild(userMsg);
+        input.value = "";
+        input.focus();
+
+        const chatBox = document.getElementById("chatBox");
+        chatBox.scrollTop = chatBox.scrollHeight;
+
+        setTimeout(() => {
+          const botMsg = document.createElement("div");
+          botMsg.className = "message bot";
+          botMsg.textContent =
+            "Thanks for your question! (Bot response here...)";
+          chatBox.appendChild(botMsg);
+          chatBox.scrollTop = chatBox.scrollHeight;
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>
