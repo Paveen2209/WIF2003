@@ -4,7 +4,7 @@
   }
 
 
-.navbar{
+/* .navbar{
     font-family: "Gabarito", sans-serif;
     background-color: var(--purple_bg);
     
@@ -45,9 +45,9 @@
 }
 .nav-link:hover { 
     color: var(--neon_green);
-}
+} */
 
-.LogginBttnContainer{
+/* .LogginBttnContainer{
     margin-right: 0.5rem;
 }
 
@@ -103,19 +103,88 @@
     font-size: 1.3rem;
     padding-left: 0.5rem;
     color: var(--neon_green);
+} */
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
+ul {
+    list-style: none;
+}
+
+
+
+header {
+    background-color: white;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+}
+
+.logo i {
+    font-size: 1.5rem;
+}
+
+.logo h1 {
+    font-size: 1.25rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color var(--transition-speed);
+    position: relative;
+}
+
+nav a:hover, nav a.active {
+    color: var(--primary-color);
+}
+
+nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 
 /* NAV BAR DONE */
 
 .main-bg{
     display: block;
-    margin-top: 4.6rem;
     height: calc(100vh - 4.6rem);
-
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0.49)), linear-gradient(0deg, rgba(115, 255, 29, 0.48), rgba(115, 255, 29, 0.48)), linear-gradient(0deg, rgba(115, 255, 29, 0.86), rgba(115, 255, 29, 0.86)), linear-gradient(0deg, rgba(115, 255, 29, 0.18), rgba(115, 255, 29, 0.18)), url("../assets/login-bg.jpeg");
     background-blend-mode: normal, hue, soft-light, multiply, normal;
-
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;

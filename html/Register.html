@@ -9,56 +9,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
-<body>
-    <nav class="navbar navbar-expand-md fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Fitness Something</a>
-            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
-                <img src="../hamburger.svg" alt="Menu" class="menu-icon">
-            </button>
-            <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
-                <div class="offcanvas-header mt-2">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Fitness Something</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Smth</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item LogginBttnContainer extra">
-                            <a class="LoginBttn" href="#">Login</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="d-none d-md-flex ms-auto align-items-center">
-                <ul class="navbar-nav">
-                    <div class="nav-seperator custom-show"></div>
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <div class="nav-seperator custom-show"></div>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <div class="nav-seperator custom-show"></div>
-                    <li class="nav-item"><a class="nav-link" href="#">Smth</a></li>
-                    <div class="nav-seperator custom-show"></div>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    <div class="nav-seperator custom-show"></div>
-                    <li class="nav-item LogginBttnContainer">
-                        <a class="LoginBttn nav-link" href="#">Login</a>
-                    </li>
-                </ul>
-            </div>
+    <!-- FontAwesome CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <body>
+    <header>
+        <div class="logo">
+          <i class="fas fa-heartbeat"></i>
+          <h1>Health and Fitness Tracker</h1>
         </div>
-    </nav>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-dumbbell"></i> Workouts</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-apple-alt"></i> Nutrition</a>
+            </li>
+            <li>
+              <a href="notifications.html" class="active"
+                ><i class="fas fa-bell"></i> Notifications</a
+              >
+            </li>
+            <li>
+                <a href="Login.html"><i class="fas fa-user"></i>Login</a>
+              </li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </header>
     <div class="main-bg">
         <div class="contianerReg">
             <div class="register-card">
