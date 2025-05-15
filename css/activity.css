@@ -1,0 +1,87 @@
+/* General Styles & Variables */
+:root {
+    --primary-color: #4CAF50;
+    --primary-dark: #388E3C;
+    --primary-light: #A5D6A7;
+    --secondary-color: #2196F3;
+    --danger-color: #f44336;
+    --text-color: #333;
+    --text-light: #666;
+    --background-color: #f5f5f5;
+    --card-background: #fff;
+    --border-radius: 8px;
+    --transition-speed: 0.3s;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --hover-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+
+.today-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    width: 100%;
+}
+
+.today-container h2{
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.today-container .steps-count{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.weekly-summary{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.weekly-summary h3{
+    align-self: center;
+}
+
+.weekly-summary .bar-chart .bar-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    
+}
+
+
+.weekly-summary .bar-chart .bar-container .bar{
+    background-color: var(--primary-color); 
+    height: 10px;
+    margin-top: 0.2rem;
+    border-radius: 5px;
+    width: 60%;
+    
+}
+.weekly-summary .bar-chart .bar-container .bar-label{
+    width: 4rem;
+    font-weight: bold;
+}
+
+.weekly-summary .bar-chart .bar-container .bar-steps{
+    opacity: 0.6;
+    font-size: 0.8rem;
+}

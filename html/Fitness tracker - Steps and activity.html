@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Steps and Activity Tracker</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/activity.css" />
     <!-- FontAwesome CDN -->
     <link
       rel="stylesheet"
@@ -23,14 +24,14 @@
             <a href="index.html"><i class="fas fa-home"></i> Home</a>
           </li>
           <li>
-            <a href="Fitness tracker - Steps and activity.html" class="active"
-              ><i class="fas fa-running"></i> Activity</a
-            >
+            <a href="Fitness tracker - Steps and activity.html" class="active">
+              <i class="fas fa-running"></i> Activity
+            </a>
           </li>
           <li>
-            <a href="Fitness tracker - log  workout.html"
-              ><i class="fas fa-dumbbell"></i> Workout</a
-            >
+            <a href="Fitness tracker - log  workout.html">
+              <i class="fas fa-dumbbell"></i> Workout
+            </a>
           </li>
           <li>
             <a href="NutritionPlanner.html"
@@ -55,44 +56,53 @@
     <main>
       <section class="content">
         <div class="activity-card">
-          <h2>Today's Steps</h2>
-          <div class="steps-count">6,800 steps</div>
-
-          <div class="progress-bar">
-            <div class="progress" style="width: 68%"></div>
+          <div class="today-container">
+            <h2>Today's Steps</h2>
+            <div class="steps-count">6,800 steps</div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 68%"></div>
+            </div>
+            <p class="goal">Goal: 10,000 steps</p>
+            <button class="btn primary-btn">Edit</button>
           </div>
-          <p class="goal">Goal: 10,000 steps</p>
 
-          <div class="weekly-summary">
+          <div class="weekly-summary card">
             <h3>Weekly Summary</h3>
             <div class="bar-chart">
               <div class="bar-container">
-                <div class="bar" style="height: 70%"></div>
                 <div class="bar-label">Mon</div>
+                <div class="bar"></div>
+                <div class="bar-steps">6000 Steps</div>
               </div>
               <div class="bar-container">
-                <div class="bar" style="height: 100%"></div>
                 <div class="bar-label">Tue</div>
+                <div class="bar"></div>
+                <div class="bar-steps">6000 Steps</div>
               </div>
               <div class="bar-container">
-                <div class="bar" style="height: 50%"></div>
                 <div class="bar-label">Wed</div>
+                <div class="bar"></div>
+                <div class="bar-steps">6000 Steps</div>
               </div>
               <div class="bar-container">
-                <div class="bar" style="height: 80%"></div>
                 <div class="bar-label">Thu</div>
+                <div class="bar"></div>
+                <div class="bar-steps">6000 Steps</div>
               </div>
               <div class="bar-container">
-                <div class="bar" style="height: 60%"></div>
                 <div class="bar-label">Fri</div>
+                <div class="bar"></div>
+                <div class="bar-steps">6000 Steps</div>
               </div>
               <div class="bar-container">
-                <div class="bar" style="height: 30%"></div>
                 <div class="bar-label">Sat</div>
+                <div class="bar"></div>
+                <div class="bar-steps">6000 Steps</div>
               </div>
               <div class="bar-container">
-                <div class="bar" style="height: 90%"></div>
                 <div class="bar-label">Sun</div>
+                <div class="bar"></div>
+                <div class="bar-steps">6000 Steps</div>
               </div>
             </div>
           </div>

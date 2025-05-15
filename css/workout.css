@@ -1,0 +1,67 @@
+.content{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h2{
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    width: 80%;
+}
+
+.content .form input{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--text-light);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}   
+
+.content .form label{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.content h3{
+    margin-top: 3rem;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content li{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--text-light);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+.card2 {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    display: block;
+}
