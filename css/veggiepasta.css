@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #44318e;
+    background-color: #4CAF50;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -65,6 +65,11 @@ p {
     font-weight: bold;
     margin-top: 1rem;
     color: #44318e;
+}
+
+.back-button {
+    text-align: center;
+    margin: 1rem auto;
 }
 
 @media (max-width: 480px) {

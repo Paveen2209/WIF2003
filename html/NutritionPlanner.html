@@ -3,115 +3,157 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UMNow - Meal Planner</title>
+    <title>Nutrition Planner</title>
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/nutritionplanner.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Gabarito:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <div class="navbar">
-        <div class="logo">UMNow.</div>
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Meal Planner</li>
-            <li>Feedback</li>
-          </ul>
-        </nav>
-        <div class="profile">
-          <img src="../assets/profile.png" alt="Profile" />
-        </div>
+      <div class="logo">
+        <i class="fas fa-heartbeat"></i>
+        <h1>Health and Fitness Tracker</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="Fitness tracker - Steps and activity.html"
+              ><i class="fas fa-running"></i> Activity</a
+            >
+          </li>
+          <li>
+            <a href="Fitness tracker - log  workout.html"
+              ><i class="fas fa-dumbbell"></i> Workout</a
+            >
+          </li>
+          <li>
+            <a href="NutritionPlanner.html" class="active"
+              ><i class="fas fa-apple-alt"></i> Nutrition</a
+            >
+          </li>
+          <li>
+            <a href="notifications.html"
+              ><i class="fas fa-bell"></i> Notifications</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-user"></i> Profile</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
       </div>
     </header>
+
     <main>
-      <div class="search-container">
-        <input type="text" placeholder="Search" id="search-bar" />
-        <div class="filter-buttons">
-          <button>High Protein</button>
-          <button>Low Fats</button>
-          <button>Low Calories</button>
+      <section class="nutrition-section">
+        <div class="search-container">
+          <input type="text" placeholder="Search" id="search-bar" />
+          <div class="filter-buttons">
+            <button>High Protein</button>
+            <button>Low Fats</button>
+            <button>Low Calories</button>
+          </div>
         </div>
-      </div>
-      <div class="recipe-list">
-        <a href="../html/grilledchickensalad.html" class="recipe-card">
-          <img
-            src="../assets/grilled-chicken-salad.jpg"
-            alt="Grilled Chicken Salad"
-          />
-          <div class="recipe-info">
-            <h3>Grilled Chicken Salad</h3>
-            <p>350 cal &bull; 25 mins</p>
-            <div class="actions">
-              <span>78</span>
-              <button class="like-button">❤️</button>
-            </div>
-          </div>
-        </a>
 
-        <a href="../html/avocadotoast.html" class="recipe-card">
-          <img src="../assets/avocadotoast.jpg" alt="Avocado Toast" />
-          <div class="recipe-info">
-            <h3>Avocado Toast</h3>
-            <p>250 cal &bull; 10 mins</p>
-            <div class="actions">
-              <span>65</span>
-              <button class="like-button">❤️</button>
+        <div class="recipe-list">
+          <a href="../html/grilledchickensalad.html" class="recipe-card">
+            <img
+              src="../assets/grilled-chicken-salad.jpg"
+              alt="Grilled Chicken Salad"
+            />
+            <div class="recipe-info">
+              <h3>Grilled Chicken Salad</h3>
+              <p>350 cal &bull; 25 mins</p>
+              <div class="actions">
+                <span>78</span>
+                <button class="like-button">❤️</button>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
 
-        <a href="../html/smoothiebowl.html" class="recipe-card">
-          <img src="../assets/smoothiebowl.jpeg" alt="Smoothie Bowl" />
-          <div class="recipe-info">
-            <h3>Smoothie Bowl</h3>
-            <p>300 cal &bull; 15 mins</p>
-            <div class="actions">
-              <span>85</span>
-              <button class="like-button">❤️</button>
+          <a href="../html/avocadotoast.html" class="recipe-card">
+            <img src="../assets/avocadotoast.jpg" alt="Avocado Toast" />
+            <div class="recipe-info">
+              <h3>Avocado Toast</h3>
+              <p>250 cal &bull; 10 mins</p>
+              <div class="actions">
+                <span>65</span>
+                <button class="like-button">❤️</button>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
 
-        <a href="../html/veggiepasta.html" class="recipe-card">
-          <img src="../assets/veggiepasta.jpeg" alt="Veggie Pasta" />
-          <div class="recipe-info">
-            <h3>Veggie Pasta</h3>
-            <p>400 cal &bull; 30 mins</p>
-            <div class="actions">
-              <span>90</span>
-              <button class="like-button">❤️</button>
+          <a href="../html/smoothiebowl.html" class="recipe-card">
+            <img src="../assets/smoothiebowl.jpeg" alt="Smoothie Bowl" />
+            <div class="recipe-info">
+              <h3>Smoothie Bowl</h3>
+              <p>300 cal &bull; 15 mins</p>
+              <div class="actions">
+                <span>85</span>
+                <button class="like-button">❤️</button>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
 
-        <a href="../html/quinoasalad.html" class="recipe-card">
-          <img src="../assets/quinoasalad.jpeg" alt="Quinoa Salad" />
-          <div class="recipe-info">
-            <h3>Quinoa Salad</h3>
-            <p>320 cal &bull; 20 mins</p>
-            <div class="actions">
-              <span>72</span>
-              <button class="like-button">❤️</button>
+          <a href="../html/veggiepasta.html" class="recipe-card">
+            <img src="../assets/veggiepasta.jpeg" alt="Veggie Pasta" />
+            <div class="recipe-info">
+              <h3>Veggie Pasta</h3>
+              <p>400 cal &bull; 30 mins</p>
+              <div class="actions">
+                <span>90</span>
+                <button class="like-button">❤️</button>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
 
-        <a href="../html/berryparfait.html" class="recipe-card">
-          <img src="../assets/berryparfait.jpg" alt="Berry Parfait" />
-          <div class="recipe-info">
-            <h3>Berry Parfait</h3>
-            <p>180 cal &bull; 5 mins</p>
-            <div class="actions">
-              <span>54</span>
-              <button class="like-button">❤️</button>
+          <a href="../html/quinoasalad.html" class="recipe-card">
+            <img src="../assets/quinoasalad.jpeg" alt="Quinoa Salad" />
+            <div class="recipe-info">
+              <h3>Quinoa Salad</h3>
+              <p>320 cal &bull; 20 mins</p>
+              <div class="actions">
+                <span>72</span>
+                <button class="like-button">❤️</button>
+              </div>
             </div>
-          </div>
-        </a>
-      </div>
+          </a>
+
+          <a href="../html/berryparfait.html" class="recipe-card">
+            <img src="../assets/berryparfait.jpg" alt="Berry Parfait" />
+            <div class="recipe-info">
+              <h3>Berry Parfait</h3>
+              <p>180 cal &bull; 5 mins</p>
+              <div class="actions">
+                <span>54</span>
+                <button class="like-button">❤️</button>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
     </main>
+
     <a href="chat.html" class="chat-button" aria-label="Open chat">
       <img src="../assets/chat.png" alt="Chat icon" />
     </a>
+
+    <footer>
+      <p>&copy; 2023 Health and Fitness Tracker. All rights reserved.</p>
+    </footer>
+
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const likeButtons = document.querySelectorAll(".like-button");

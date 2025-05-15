@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #44318e;
+    --primary-color: #0D9276;
     --bot-bg: #dae2f8;
     --user-bg: #f1f1f1;
   }
@@ -19,7 +19,7 @@
   }
   
   .header {
-    background: linear-gradient(to right, #7f8cc2, #7f8cc2);
+    background: linear-gradient(to right,#0D9276, #0D9276);
     padding: 1rem;
     color: white;
     display: flex;
@@ -80,7 +80,7 @@
   
   .bot {
     align-self: flex-start;
-    background-color: var(--bot-bg);
+    background-color: #1adcb2;
     color: #111;
   }
   
@@ -112,7 +112,7 @@
   }
   
   .chat-input button:hover {
-    background-color: #372a7f;
+    background-color: #0D9276;
   }
   
   /* Responsive */
