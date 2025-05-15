@@ -1,0 +1,84 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+.activity-card {
+  background: #fff;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.activity-card h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.steps-count {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #4f46e5;
+}
+
+.progress-bar {
+  height: 16px;
+  background: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  background: #4f46e5;
+}
+
+.goal-text {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.weekly-summary {
+  margin-top: 30px;
+}
+
+.weekly-summary h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 120px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.bar {
+  width: 10%;
+  background: #4f46e5;
+  border-radius: 4px 4px 0 0;
+  transition: height 0.3s;
+}
+
+.bar-label {
+  text-align: center;
+  font-size: 0.75em;
+  margin-top: 4px;
+  color: #555;
+}
+
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

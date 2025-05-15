@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log Workout - Health and Fitness Tracker</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fas fa-heartbeat"></i>
+        <h1>Health and Fitness Tracker</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="Fitness tracker - Steps and activity.html"><i class="fas fa-running"></i> Activity</a></li>
+          <li><a href="Fitness tracker - log  workout.html" class="active"><i class="fas fa-dumbbell"></i> Workout</a></li>
+          <li><a href="NutritionPlanner.html"><i class="fas fa-apple-alt"></i> Nutrition</a></li>
+          <li><a href="notifications.html"><i class="fas fa-bell"></i> Notifications</a></li>
+          <li><a href=""><i class="fas fa-bullseye"></i> Goals</a></li>
+          <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+          <li><a href="Login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+          <li><a href="Register.html"><i class="fas fa-user-plus"></i> Register</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <main>
+      <section class="content">
+        <h2>Log Your Workout</h2>
+        <form id="workoutForm" class="form">
+          <label for="type">Workout Type:</label>
+          <input type="text" id="type" required />
+
+          <label for="duration">Duration (minutes):</label>
+          <input type="number" id="duration" required />
+
+          <label for="intensity">Intensity (1-10):</label>
+          <input type="number" id="intensity" min="1" max="10" required />
+
+          <button type="submit" class="btn primary-btn">Log Workout</button>
+        </form>
+
+        <h3>Workout History</h3>
+        <ul id="workoutList" class="workout-list"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Health and Fitness Tracker. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const form = document.getElementById("workoutForm");
+      const list = document.getElementById("workoutList");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const type = document.getElementById("type").value;
+        const duration = document.getElementById("duration").value;
+        const intensity = document.getElementById("intensity").value;
+
+        const workout = { type, duration, intensity };
+        let workouts = JSON.parse(localStorage.getItem("workouts")) || [];
+        workouts.push(workout);
+        localStorage.setItem("workouts", JSON.stringify(workouts));
+
+        displayWorkouts();
+        form.reset();
+      });
+
+      function displayWorkouts() {
+        const workouts = JSON.parse(localStorage.getItem("workouts")) || [];
+        list.innerHTML = "";
+        workouts.forEach((w) => {
+          const item = document.createElement("li");
+          item.textContent = `${w.type} - ${w.duration} mins - Intensity: ${w.intensity}`;
+          list.appendChild(item);
+        });
+      }
+
+      window.onload = displayWorkouts;
+    </script>
+  </body>
+</html>
