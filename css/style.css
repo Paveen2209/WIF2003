@@ -370,6 +370,8 @@ footer {
     overflow: hidden;
 }
 
+
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .menu-toggle {
